@@ -1,0 +1,7 @@
+*.o
+*.png
+*sfml*
+sample/
+history*
+.vscode
+*.ttf
