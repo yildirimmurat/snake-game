@@ -88,7 +88,7 @@ void EventManager::LoadBindings(){
 			std::string keyval;
 			keystream >> keyval;
 			int start = 0;
-			int end = keyval.find(delimiter);
+			std::string::size_type end = keyval.find(delimiter);
 			if (end == std::string::npos){ delete bind; bind = nullptr; break; }
 			EventType type = EventType(stoi(keyval.substr(start, end - start)));
 			int code = stoi(keyval.substr(end + delimiter.length(),
